@@ -12,7 +12,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           </Link>
         </h1>
       </header>
-      <main className="mt-8">
+      <main className="py-8">
         <Component {...pageProps} />
       </main>
     </div>

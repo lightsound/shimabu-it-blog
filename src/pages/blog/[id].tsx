@@ -10,11 +10,12 @@ const BlogId: NextPage<Props> = (props) => {
   return (
     <div>
       <h1 className="text-4xl font-bold">{props.title}</h1>
+
       <time dateTime={props.publishedAt} className="mt-2 block">
         {dayjs(props.publishedAt).format("YYYY年MM月DD日")}
       </time>
       <article
-        className="prose prose-sm mt-8"
+        className="prose-sm mt-8"
         dangerouslySetInnerHTML={{ __html: props.body }}
       />
     </div>
